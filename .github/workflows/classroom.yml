@@ -92,11 +92,4 @@ jobs:
           TRANSFER-MONEY_RESULTS: "${{steps.transfer-money.outputs.result}}"
           TRANSFER-FAILS_RESULTS: "${{steps.transfer-fails.outputs.result}}"
         with:
-          runners: >
-            test-main-flow,
-            register-customer,
-            deposit-increases-balance,
-            withdraw-enough-money,
-            withdraw-fails,
-            transfer-money,
-            transfer-fails
+          runners: test-main-flow,register-customer,deposit-increases-balance,withdraw-enough-money,withdraw-fails,transfer-money,transfer-fails
