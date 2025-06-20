@@ -17,8 +17,3 @@ Look for the `TODO` comments in each file. The unit tests in `BankTest.java` wil
 - Deposits correctly increase the account balance.
 - Withdrawals only work if there's enough money.
 - Transfers between two registered accounts work correctly and only succeed if the sender has sufficient funds.
-
----
-
-### Run command
-`gradle test` (or `./gradlew test`)
