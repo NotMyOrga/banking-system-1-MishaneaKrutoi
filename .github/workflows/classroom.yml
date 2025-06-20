@@ -22,7 +22,7 @@ jobs:
         id: test-main-flow
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Test main flow
+          test-name: BankTest - Test main flow
           command: './gradlew test --tests "bank.BankTest.testMainFlow"'
           timeout: 1
           max-score: 5
@@ -31,7 +31,7 @@ jobs:
         id: register-customer
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Register customer with correct balance
+          test-name: BankTest - Register customer with correct balance
           command: './gradlew test --tests "bank.BankTest.testRegisterCustomerStoresAccountWithCorrectBalance"'
           timeout: 1
           max-score: 5
@@ -40,7 +40,7 @@ jobs:
         id: deposit-increases-balance
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Deposit increases balance
+          test-name: BankTest - Deposit increases balance
           command: './gradlew test --tests "bank.BankTest.testDepositIncreasesBalance"'
           timeout: 1
           max-score: 5
@@ -49,7 +49,7 @@ jobs:
         id: withdraw-enough-money
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Withdraw with enough money
+          test-name: BankTest - Withdraw with enough money
           command: './gradlew test --tests "bank.BankTest.testWithdrawDecreasesBalanceIfEnoughMoney"'
           timeout: 1
           max-score: 5
@@ -58,7 +58,7 @@ jobs:
         id: withdraw-fails
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Withdraw fails if not enough money
+          test-name: BankTest - Withdraw fails if not enough money
           command: './gradlew test --tests "bank.BankTest.testWithdrawFailsIfNotEnoughMoney"'
           timeout: 1
           max-score: 5
@@ -67,7 +67,7 @@ jobs:
         id: transfer-money
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Transfer moves money between accounts
+          test-name: BankTest - Transfer moves money between accounts
           command: './gradlew test --tests "bank.BankTest.testTransferMovesMoneyBetweenAccounts"'
           timeout: 1
           max-score: 5
@@ -76,7 +76,7 @@ jobs:
         id: transfer-fails
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Transfer fails if insufficient funds
+          test-name: BankTest - Transfer fails if insufficient funds
           command: './gradlew test --tests "bank.BankTest.testTransferFailsIfInsufficientFunds"'
           timeout: 1
           max-score: 5
