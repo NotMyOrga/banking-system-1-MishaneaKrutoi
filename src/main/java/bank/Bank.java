@@ -8,6 +8,7 @@ public class Bank {
 
      public void registerCustomer(Person person, double initialDeposit) {
         if (!bankAccounts.containsKey(person)) {
+            
             bankAccounts.put(person, new BankAccount(person, initialDeposit));
         }
     }
